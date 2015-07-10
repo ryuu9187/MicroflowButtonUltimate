@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="MicroflowButtonUltimate.widget.MicroflowButtonUltimate" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Microflow Button Ultimate</name>
+    <description/>
+    <properties>
+	
+		<property key="targetSelector" required="true" type="string">
+			<caption>Target (CSS selector)</caption>
+			<category>General</category>
+			<description>Target Dijit</description>
+		</property>
+		
+		<property key="parentFilterSelector" required="false" type="string">
+			<caption>Parent filter</caption>
+			<category>General</category>
+			<description>CSS selector. Useful for ListView/TemplateGrid.</description>
+		</property>
+		
+		<property key="mf" type="string" required="true">
+			<caption>Microflow</caption>
+			<category>Microflow</category>
+			<description/>
+		</property>
+		
+		<property key="passObjects" required="true" type="enumeration" defaultValue="selection">
+			<caption>Pass data grid object</caption>
+			<category>Microflow</category>
+			<description/>
+			<enumerationValues>
+				<enumerationValue key="nothing">Nothing</enumerationValue>
+				<enumerationValue key="selection">Selection</enumerationValue>
+				<enumerationValue key="all">All pages</enumerationValue>
+			</enumerationValues>
+		</property>
+		
+		<property key="passContext" required="true" type="boolean" defaultValue="false">
+			<caption>Pass enclosing object</caption>
+			<category>Microflow</category>
+			<description/>
+		</property>
+		
+		<property key="ask" required="true" type="boolean" defaultValue="false">
+			<caption>Ask confirmation</caption>
+			<category>Confirmation</category>
+			<description/>
+		</property>
+		
+		<property key="question" required="false" type="string" multiline="true" defaultValue="Are you sure?">
+			<caption>Question</caption>
+			<category>Confirmation</category>
+			<description/>
+		</property>
+		
+		<property key="proceed" required="false" type="string" defaultValue="Proceed">
+			<caption>Proceed caption</caption>
+			<category>Confirmation</category>
+			<description/>
+		</property>
+		
+		<property key="cancel" required="false" type="string" defaultValue="Cancel">
+			<caption>Cancel caption</caption>
+			<category>Confirmation</category>
+			<description/>
+		</property>
+		
+		<property key="progBarType" required="true" type="enumeration" defaultValue="none">
+			<caption>Show progress bar</caption>
+			<category>Advanced</category>
+			<description/>
+			<enumerationValues>
+				<enumerationValue key="none">None</enumerationValue>
+				<enumerationValue key="noblock">Non-blocking</enumerationValue>
+				<enumerationValue key="block">Blocking</enumerationValue>
+			</enumerationValues>
+		</property>
+		
+		<property key="progMsg" required="false" type="string">
+			<caption>Progress message</caption>
+			<category>Advanced</category>
+			<description/>
+		</property>
+		
+		<property key="mfCallType" required="true" type="enumeration" defaultValue="sync">
+			<caption>Microflow call type</caption>
+			<category>Advanced</category>
+			<description/>
+			<enumerationValues>
+				<enumerationValue key="sync">Synchronous</enumerationValue>
+				<enumerationValue key="async">Asynchronous</enumerationValue>
+			</enumerationValues>
+		</property>
+		
+		<property key="caption" required="true" type="string">
+			<caption>Caption</caption>
+			<category>Styling</category>
+			<description/>
+		</property>
+		
+		<property key="tooltip" required="false" type="string">
+			<caption>Button tooltip</caption>
+			<category>Styling</category>
+			<description/>
+		</property>
+		
+		<property key="img" required="false" type="image">
+			<caption>Image</caption>
+			<category>Styling</category>
+			<description/>
+		</property>
+		
+		<property key="renderType" required="true" type="enumeration" defaultValue="button">
+			<caption>Render mode</caption>
+			<category>Styling</category>
+			<description/>
+			<enumerationValues>
+				<enumerationValue key="link">Link</enumerationValue>
+				<enumerationValue key="button">Button</enumerationValue>
+			</enumerationValues>
+		</property>
+		
+		<property key="btnStyle" required="true" type="enumeration" defaultValue="default">
+			<caption>Button style</caption>
+			<category>Styling</category>
+			<description/>
+			<enumerationValues>
+				<enumerationValue key="default">Default</enumerationValue>
+				<enumerationValue key="inverse">Inverse</enumerationValue>
+				<enumerationValue key="primary">Primary</enumerationValue>
+				<enumerationValue key="info">Info</enumerationValue>
+				<enumerationValue key="success">Success</enumerationValue>
+				<enumerationValue key="warning">Warning</enumerationValue>
+				<enumerationValue key="danger">Danger</enumerationValue>
+			</enumerationValues>
+		</property>
+	
+    </properties>
+</widget>
